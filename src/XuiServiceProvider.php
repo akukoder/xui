@@ -25,6 +25,6 @@ class XuiServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/resources/views', 'xui');
 
-        $this->loadViewComponentsAs('xui');
+        $this->loadViewComponentsAs('xui', []);
     }
 }
