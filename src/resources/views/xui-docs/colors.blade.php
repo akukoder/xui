@@ -1,4 +1,4 @@
-@extends('xui::docs.layout')
+@extends('xui::xui-docs.layout')
 
 @section('content')
     <x-xui::container class="mb-10">

@@ -1,3 +1,9 @@
-<div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded border-0 bg-white shadow">
+@props(['shadow' => 'shadow'])
+
+@php
+$defaultClass = 'relative flex flex-col min-w-0 break-words w-full rounded border-0 bg-white ' . $shadow;
+@endphp
+
+<div {{ $attributes->merge(['class' => $defaultClass]) }}>
     {!! $slot !!}
 </div>
