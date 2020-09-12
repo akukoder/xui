@@ -9,5 +9,6 @@ Route::group(['middleware' => 'web', 'prefix' => 'xui-docs'], function () {
     Route::view('/grids', 'xui::xui-docs.grids')->name('xui::grids');
     Route::view('/cards', 'xui::xui-docs.cards')->name('xui::cards');
     Route::view('/alerts', 'xui::xui-docs.alerts')->name('xui::alerts');
+    Route::view('/navs', 'xui::xui-docs.navs')->name('xui::navs');
 
 });

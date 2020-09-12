@@ -83,6 +83,16 @@
                             Alerts
                         </a>
                     </li>
+                    <li class="inline-flex">
+                        <a
+                            class="text-{{ request()->is('xui-docs/navs') ? 'pink-500' : 'gray-700' }} hover:text-{{ request()->is('xui-docs/navs') ? 'pink-600' : 'gray-900' }} text-xs mb-4 font-semibold"
+                            href="{{ URL::route('xui::navs') }}">
+                            <svg class="h-4 w-4 mr-2 -mt-1 {{ request()->is('xui-docs/navs') ? 'pink-500' : 'gray-700' }} inline-block"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+                            </svg>
+                            Navbar
+                        </a>
+                    </li>
 
                 </ul>
             </div>
